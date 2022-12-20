@@ -1,0 +1,157 @@
+:root {
+    --red: rgb(253, 41, 41, 0.9);
+}
+
+.col-haft {
+    width: 50%;
+}
+
+.col-thirth {
+    width: 33.33333%;
+}
+
+.col-fourth {
+    width: 25%;
+}
+
+
+/* Lap  */
+
+@media (min-width:1024px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+/* PC  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .menu-btn {
+        display: none;
+    }
+
+    #tour #countries {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #tour .countries2 {
+        margin-top: 0;
+    }
+
+    #tour #countries .countries-sub {
+        width: fit-content;
+    }
+
+    #contact .contact-sub .contact-form input {
+        width: 95%;
+    }
+}
+
+/* Mobile  */
+
+@media (max-width: 740px) {
+
+    #header .menu-btn .menu-icon:hover,
+    #header .search-btn .search-icon:hover {
+        color: #fff;
+        background: none;
+    }
+
+    #header .menu-btn .menu-icon:active {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #header .search-btn .search-icon:active {
+        background: rgba(255, 255, 255, 0.8);
+        color: #000;
+    }
+
+    .slide-text p {
+        display: none;
+    }
+
+    #header #nav {
+        display: grid;
+        visibility: hidden;
+    }
+
+    #header>#nav>li:first-child {
+        visibility: visible;
+        margin-left: 16px;
+        display: inline-block;
+    }
+
+    #header .active {
+        visibility: visible;
+    }
+
+    #header>#nav>li:hover:first-child>a {
+        color: #fff;
+        background: none;
+    }
+
+    #header>#nav>li:active:first-child>a {
+        color: rgb(255, 255, 255, 0.8);
+        background: none;
+    }
+
+    #nav>li:hover>a {
+        color: #fff;
+        background: none;
+    }
+
+    #nav .subnav li:active a,
+    #nav>li:active>a {
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255, 0.8);
+    }
+
+    #nav .subnav li:hover a{
+        color: #000;
+        background: none;
+    }
+    #nav .subnav li a:active{
+        color:rgba(255, 255, 255);
+        background: var(--red);
+    }
+
+    #tour #countries {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #tour .countries2 {
+        margin-top: 0;
+    }
+
+    #tour #countries .countries-sub {
+        width: fit-content;
+    }
+
+    #contact .contact-sub .contact-form input {
+        width: 95%;
+    }
+
+    #contact .contact-sub {
+        display: block;
+    }
+
+    #contact .contact-sub .contact-address {
+        font-weight: 500;
+        width: 100%;
+    }
+
+    #contact .contact-sub .contact-form {
+        font-weight: 500;
+        width: 100%;
+    }
+
+    #tour .tour-text p {
+        text-align: left;
+    }
+
+    #content .content-section .members-list .member-item {
+        margin-bottom: -3rem;
+    }
+}
